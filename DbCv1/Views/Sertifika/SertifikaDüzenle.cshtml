@@ -1,0 +1,39 @@
+﻿@using DbCv1.Models.Entity
+@model TblSertfikalarım
+@{
+    ViewBag.Title = "SertifikaDüzenle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+
+
+
+
+
+<br />
+<form method="post">
+   
+       
+        @Html.TextBoxFor(x => x.Aciklama, new { @class = "form-control" })
+
+        <br />
+
+         
+        @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
+
+  
+
+
+
+
+
+
+
+    <br />
+
+
+    <button class="btn btn-info">Kaydet</button>
+</form>
+

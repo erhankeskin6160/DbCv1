@@ -1,0 +1,35 @@
+﻿@using DbCv1.Models.Entity
+@model List<TblAdmin>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+ 
+
+<br />
+<h2  >Admin  İşlemleri</h2>
+
+<table class="table table-bordered table-stripped">
+    <tr>
+        <th>Id</th>
+        <th style="text-align:center; font-weight:bold;" >Kullanıcı Adı</th>
+        <th >Düzenle</th>
+        <th>Kaldır</th>
+
+    </tr>
+    @foreach (var item in Model)
+    {
+<tr>
+    <td class="col-3">@item.Id</td>
+    <td class="col-7" style="text-align:center;">@item.KullaniciAdi</td>
+
+    <td class="col-1"><a href="/Admin/AdminDüzenle/@item.Id" class="btn btn-warning col-12"  >Düzenle</a></td>
+    <td class="col-1"><a href="/Admin/AdminSil/@item.Id" class="btn btn-danger col-12 ">Sil</a></td>
+
+</tr>
+    }
+    <tr></tr>
+</table>
+<a href="/Admin/AdminEkle" class="btn btn-primary">Yeni Deneyim Ekle</a>

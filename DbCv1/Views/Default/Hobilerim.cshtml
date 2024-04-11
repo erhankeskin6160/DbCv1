@@ -1,0 +1,12 @@
+﻿@using DbCv1.Models.Entity;
+@model  List<TblHobilerim>
+<div class="resume-section-content">
+    @foreach (var hobilerim in Model)
+    {
+
+
+    <h2 class="mb-5">Hobilerim</h2>
+    <p>@hobilerim.Acıklama1.</p>
+    <p class="mb-0">@hobilerim.Acıklama2.</p>
+    }
+</div>

@@ -1,0 +1,39 @@
+﻿@using DbCv1.Models.Entity
+@model List<TblHakkımda>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+ 
+
+<h2>Hobi Düzenleme Sayfası</h2>
+<form method="post">
+    @foreach (var item in Model)
+    {
+
+        <label>Ad</label>
+        <input type="text" name="Ad" value="@item.Ad" class="form-control" />
+        <br />
+        <label>SoyAd</label>
+        <input type="text" name="SoyAd" value="@item.SoyAd" class="form-control" />
+        <br />
+        <label>Adres</label>
+        <input type="text" name="Adres" value="@item.Adres" class="form-control" />
+        <br />
+        <label>Telefon</label>
+        <input type="text" name="Telefon" value="@item.Telefon" class="form-control" />
+        <br />
+        <label>Mail</label>
+        <input type="text" name="Mail" value="@item.Mail" class="form-control" /><br />
+        <br />
+        <label>Resim</label>
+        <input type="text" name="Resim" value="@item.Resim" class="form-control" />
+        <label>Açıklama</label>
+        <textarea type="text" name="Aciklama" class="form-control">@item.Aciklama</textarea>
+
+        <button class="btn btn-info mt-2">Güncelle</button>
+    }
+</form>
+

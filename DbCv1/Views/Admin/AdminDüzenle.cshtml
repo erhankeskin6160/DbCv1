@@ -1,0 +1,28 @@
+﻿@model DbCv1.Models.Entity.TblAdmin
+
+@{
+    ViewBag.Title = "AdminDüzenle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h3>Admin Düzenleme</h3>
+
+<form method="post">
+    @Html.Label("Deneyim Id");
+    @Html.TextBoxFor(x => x.Id, new { @class = "form-control" })
+
+    @Html.Label("Baslık")
+    @Html.TextBoxFor(x => x.KullaniciAdi, new { @class = "form-control" })
+
+    @Html.Label("Alt Baslık")
+    @Html.TextBoxFor(x => x.Sifre, new { @class = "form-control" })
+
+
+
+     
+
+    <br />
+
+
+    <button class="btn btn-info">Güncelle</button>
+</form>

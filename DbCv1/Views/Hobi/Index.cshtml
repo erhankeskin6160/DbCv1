@@ -1,0 +1,27 @@
+﻿@using DbCv1.Models.Entity
+@model List<TblHobilerim>
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+ 
+<h2>Hobi Düzenleme Sayfası</h2>
+<form method="post">
+    @foreach (var item in Model)
+    {
+
+
+        <textarea rows="10" cols="151" name="Acıklama1">
+        @item.Acıklama1
+    </textarea>
+        <textarea rows="10" cols="151" name="Acıklama2">
+        @item.Acıklama2
+    </textarea>
+    }
+
+    <button class="btn btn-info">Güncelle</button>
+</form>
+

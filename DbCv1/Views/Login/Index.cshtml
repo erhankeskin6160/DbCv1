@@ -1,0 +1,46 @@
+﻿ 
+
+@model DbCv1.Models.Entity.TblAdmin
+
+@{
+    Layout = null;
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Design by foolishdeveloper.com -->
+    <title>Admin Paneli Giriş</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link href="~/fontawesome-free-6.5.2-web/css/css1.css" rel="stylesheet" />
+    <!--Stylesheet-->
+   
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form method="post">
+        <h3>Admin Paneli Giriş Sayfası</h3>
+
+        <label for="username">Kullanıcı Adı</label>
+        <input type="text" placeholder="Kullanıcı Adı Giriniz" id="username" name="KullaniciAdi">
+
+        <label for="password">Şifre</label>
+        <input type="password" placeholder="Şifre Giriniz" id="password" name="Sifre">
+
+
+        <button id="girisbutton" class="mt-1">Giriş Yap</button>
+         
+    </form>
+</body>
+</html>
+
+
+
