@@ -4474,7 +4474,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Sertifikalarım\sertfika1.PNG" />
     <Content Include="startbootstrap-resume-master\.gitignore" />
     <Content Include="startbootstrap-resume-master\dist\assets\img\favicon.ico" />
     <Content Include="startbootstrap-resume-master\dist\assets\img\profile.jpg" />
@@ -4548,7 +4547,6 @@
     <Content Include="Views\Eğitim\EğitimEkle.cshtml" />
     <Content Include="Views\Eğitim\EğitimDüzenle.cshtml" />
     <Content Include="Views\Sertifika\Index.cshtml" />
-    <Content Include="Sertifikalarım\Introduction_to_Cybersecurity_Badge20221202-30-1hye2bu.pdf" />
     <Content Include="Views\Sertifika\SertifikaDüzenle.cshtml" />
     <Content Include="Views\Sertifika\SertifikaEkle.cshtml" />
     <Content Include="Views\Sertifika\SertifikaGetir.cshtml" />
